@@ -1,0 +1,32 @@
+{
+  "name": "cat-solitaire",
+  "version": "0.0.1",
+  "description": "A good old solitaire game.",
+  "main": "index.js",
+  "repository": "https://github.com/lazarljubenovic/cat-solitaire",
+  "author": "lazarljubenovic <lazar.ljubenovic.1995@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "NODE_ENV=prod rollup -c",
+    "dev": "NODE_END=dev rollup -cw"
+  },
+  "devDependencies": {
+    "@types/virtual-dom": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "rollup": "^1.10.0",
+    "rollup-plugin-bundle-size": "^1.0.3",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-copy": "^1.1.0",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-typescript2": "^0.20.1",
+    "servor": "^2.0.3",
+    "typescript": "^3.4.3"
+  },
+  "dependencies": {
+    "@lazarljubenovic/iterators": "^0.0.1",
+    "neewt": "^0.0.1",
+    "snabbdom": "^0.7.3"
+  }
+}
