@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "@lazarljubenovic/iterators": "^0.0.1",
-    "neewt": "^0.0.1",
-    "snabbdom": "^0.7.3"
+    "neewt": "^0.0.1"
   }
 }

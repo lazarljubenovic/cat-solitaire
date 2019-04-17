@@ -1,19 +1,19 @@
 import { Suit } from './core'
 
-export const enum ActionTypes {
-  Move,
-  OpenDeck,
-  FlipCard,
+export /*const*/ enum ActionTypes {
+  Move = 'move',
+  OpenDeck = 'open-deck',
+  FlipCard = 'flip-card',
 }
 
 interface ActionGeneral<T extends ActionTypes> {
   type: T
 }
 
-export const enum MoveSourceType {
-  Free,
-  Stacks,
-  Bars,
+export /*const*/ enum MoveSourceType {
+  Free = 'free',
+  Stacks = 'stacks',
+  Bars = 'bars',
 }
 
 interface MoveSourceGeneral<T extends MoveSourceType> {
@@ -29,14 +29,14 @@ export interface MoveSourceStacks extends MoveSourceGeneral<MoveSourceType.Stack
 
 export interface MoveSourceBars extends MoveSourceGeneral<MoveSourceType.Bars> {
   barIndex: number
-  card: number
+  cardIndex: number
 }
 
 export type MoveSource = MoveSourceFree | MoveSourceStacks | MoveSourceBars
 
-export const enum MoveDestinationType {
-  Stacks,
-  Bars,
+export /*const*/ enum MoveDestinationType {
+  Stacks = 'stacks',
+  Bars = 'bars',
 }
 
 interface MoveDestinationGeneral<T extends MoveDestinationType> {
